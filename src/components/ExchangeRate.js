@@ -4,7 +4,7 @@
 const ExchangeRate = ()  =>  {
   return (
     <div className ="exchange-rate">
-      EachangeRate
+      ExchangeRate
       
     </div>
   )
