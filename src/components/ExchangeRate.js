@@ -1,11 +1,13 @@
 
 
-const ExchangeRate = () => {
-          return (
-                    <div className = "exchange-rate">
-                       ExchangeRate       
-                    </div>
-          )
+
+const ExchangeRate = ()  =>  {
+  return (
+    <div className ="exchange-rate">
+      EachangeRate
+      
+    </div>
+  )
 }
 
 export default ExchangeRate

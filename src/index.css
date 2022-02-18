@@ -14,7 +14,7 @@ code {
 
 .app {
   display: flex;
-  flex-direction: column;
+  dlex-direction: column;
   align-items: center;
 }
 

@@ -1,9 +1,10 @@
-import ExchangeRate from "./components/ExchangeRate"
+import ExchangeRate from "./ExchangeRate"
 
 const CurrencyConverter = ()  =>  {
   return (
     <div className ="currency-converter">
-      Currency Converter
+      CurrencyCurrency
+
       <ExchangeRate/>
     </div>
   )
