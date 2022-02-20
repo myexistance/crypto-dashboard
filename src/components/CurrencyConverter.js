@@ -67,9 +67,9 @@ const CurrencyConverter = ()  =>  {
                                <td>Secondary Currency:</td>
                                <td>
                                  <input
-                                 type="number"
                                  name="currency-amount-2"
                                  value={result}
+                                 disabled={true}
                                  />
                                </td>
                                <td>
@@ -90,7 +90,7 @@ const CurrencyConverter = ()  =>  {
 
       </div>
       
-      <ExchangeRate/>
+      <ExchangeRate exchangeRate={exchangeRate}/>
     </div>
   )
 }
