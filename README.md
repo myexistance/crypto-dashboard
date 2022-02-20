@@ -1,3 +1,28 @@
+# Testing the end point with API
+API URL
+https://rapidapi.com/alphavantage/api/alpha-vantage/
+
+const convert = () => {
+     
+
+      const options = {      
+        method: 'GET',
+        url: 'https://alpha-vantage.p.rapidapi.com/query',
+        params: {from_currency: chosenPrimaryCurrency, function: 'CURRENCY_EXCHANGE_RATE',       to_currency: chosenSecondaryCurrency},
+        headers: {
+          'x-rapidapi-host': 'alpha-vantage.p.rapidapi.com',
+          'x-rapidapi-key': '084895d68amshd43646cc4e216f4p1626a4jsn6bf06a1a7aae'
+        }
+      };
+
+      axios.request(options).then((response) => {
+	console.log(response.data['Realtime Currency Exchange Rate']['5. Exchange Rate']);
+      }).catch((error) => {
+	console.error(error);
+      });
+  }
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
