@@ -25,9 +25,14 @@ const NewsFeed = ()  =>  {
   
 }, [])
 
+console.log(articles)
+
+const first8articles = articles?.slice(0,8)
+
   return (
     <div className ="news-feed">
-      NewsFeed
+      <h2>News Feed</h2>
+      {first8articles?.map(article => (<p>{article.title}</p>))}
     </div>
   )
 }
