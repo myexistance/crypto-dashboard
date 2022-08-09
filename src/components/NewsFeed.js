@@ -32,7 +32,11 @@ const first8articles = articles?.slice(0,8)
   return (
     <div className ="news-feed">
       <h2>News Feed</h2>
-      {first8articles?.map(article => (<p>{article.title}</p>))}
+      {first8articles?.map(article => (
+          <div>
+            <a href={article.url}><p>{article.title}</p></a>
+          </div>))}
+          
     </div>
   )
 }

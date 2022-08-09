@@ -15,17 +15,17 @@ code {
 .app {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
 }
 
 .news-feed {
-  
+  flex: 1;
   background-color: red;
   
 }
 
 .currency-converter {
-
+  flex: 1;
   background-color: blue;
 
 }
